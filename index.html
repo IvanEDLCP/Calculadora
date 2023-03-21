@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <h1 class="title">Calculadora</h1>
+      <form class="form" id="form">
+        <label for="numberOne">Ingresa el primer numero:</label>
+        <input
+          type="number"
+          id="numberOne"
+          name="numberOne"
+          class="input"
+          required
+        />
+
+        <label for="numberTwo">Ingresa el segundo numero:</label>
+        <input
+          type="number"
+          id="numberTwo"
+          name="numberTwo"
+          class="input"
+          required
+        />
+
+        <div class="buttons">
+          <button class="btn btn-add" id="add">+</button>
+          <button class="btn btn-sub" id="sub">-</button>
+          <button class="btn btn-mul" id="mul">x</button>
+          <button class="btn btn-div" id="div">/</button>
+        </div>
+
+        <p class="result-container">
+          Resultado: <span class="result" id="result"></span>
+        </p>
+
+        <span class="reload" id="reloadBtn">Refrescar</span>
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

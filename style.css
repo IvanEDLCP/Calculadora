@@ -1,0 +1,127 @@
+:root {
+  --Light-red: hsl(0, 100%, 67%);
+  --Orange-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+
+  --White: hsl(0, 0%, 100%);
+  --Pale-blue: hsl(221, 100%, 96%);
+  --Light-lavender: hsl(241, 100%, 89%);
+  --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.main-container {
+  width: calc(320px - 20px);
+  min-height: 380px;
+  padding: 20px;
+  background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+  border-radius: 20px;
+  box-shadow: 12px 12px 20px var(--Pale-blue);
+}
+
+.main-container > .title {
+  font-size: 40px;
+  color: var(--White);
+  text-align: center;
+}
+
+.main-container > .form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  color: var(--Pale-blue);
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.form > .input {
+  padding: 6px;
+  margin: 2px 0;
+  border-radius: 10px;
+  color: var(--Dark-gray-blue);
+  font-weight: 700;
+  border-style: none;
+}
+
+.input:focus {
+  outline-color: var(--Dark-gray-blue);
+}
+
+.buttons {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons .btn {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  background: transparent;
+  border: 2px solid var(--White);
+  color: var(--White);
+}
+
+.btn:hover {
+  cursor: pointer;
+  border-style: none;
+  box-shadow: 1px 1px 5px var(--Light-lavender);
+}
+
+.btn-add:hover {
+  background-color: var(--Light-red);
+}
+
+.btn-sub:hover {
+  background-color: var(--Orange-yellow);
+}
+
+.btn-mul:hover {
+  background-color: var(--Green-teal);
+}
+
+.btn-div:hover {
+  background-color: var(--Cobalt-blue);
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.result-container {
+  text-align: center;
+  color: var(--Pale-blue);
+}
+
+.result-container > .result {
+  color: var(--White);
+  font-weight: 700;
+}
+
+.reload {
+  color: var(--Light-lavender);
+  text-align: center;
+  margin: 10px 0;
+}
+
+.reload:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
